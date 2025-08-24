@@ -301,13 +301,13 @@ export default function AutonomousAgentScreen() {
         
         switch (strategy) {
           case 'conservative':
-            driftThreshold = 8.0;
-            maxDailyTrades = 2;
+            driftThreshold = 3.0;
+            maxDailyTrades = 5;
             riskProfile = 'conservative';
             break;
           case 'aggressive':
-            driftThreshold = 3.0;
-            maxDailyTrades = 5;
+            driftThreshold = 8.0;
+            maxDailyTrades = 2;
             riskProfile = 'aggressive';
             break;
           case 'balanced':
@@ -723,7 +723,7 @@ export default function AutonomousAgentScreen() {
                 <View style={styles.strategyInfo}>
                   <Text style={styles.strategyName}>Conservative</Text>
                   <Text style={styles.strategyDescription}>
-                    Lower risk, higher drift threshold (8%), max 2 trades/day
+                    Lower risk, lower drift threshold (3%), max 5 trades/day
                   </Text>
                 </View>
                 {selectedStrategy === 'conservative' && (
@@ -761,7 +761,7 @@ export default function AutonomousAgentScreen() {
                 <View style={styles.strategyInfo}>
                   <Text style={styles.strategyName}>Aggressive</Text>
                   <Text style={styles.strategyDescription}>
-                    Higher risk, 3% drift threshold, max 5 trades/day
+                    Higher risk, 8% drift threshold, max 2 trades/day
                   </Text>
                 </View>
                 {selectedStrategy === 'aggressive' && (

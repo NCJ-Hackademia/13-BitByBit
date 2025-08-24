@@ -41,11 +41,4 @@ An *AI-powered portfolio assistant* that works in *two modes*:
 - 🪙 Custom ERC-20 Test USDC & faucet LINK  
 - 🔒 MetaMask + Alchemy RPC  
 
----
 
-## 🚀 Getting Started
-
-### 1. Clone Repo
-```sh
-git clone https://github.com/yourusername/wallet.git
-cd wallet

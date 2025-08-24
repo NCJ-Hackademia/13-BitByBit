@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# 🤖 AI Crypto Wallet Assistant
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+An *AI-powered portfolio assistant* that works in *two modes*:  
+- 💬 *Chatbot Mode* – Ask natural language questions like "Rebalance my portfolio for passive income" and get strategies + charts.  
+- 🧠 *Agent Mode* – A *24/7 autonomous agent* that analyzes your portfolio, monitors market conditions, and can execute strategies automatically on testnets.  
 
-## Get started
+⚡ Built with *FastAPI, **React Native, **LangChain, **Groq, and **Web3*.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+### 🔹 Chatbot Mode
+- Natural language interface for your crypto portfolio.  
+- AI generates optimal strategies (Conservative, Balanced, Aggressive).  
+- Visualizes allocations with *charts & performance metrics*.  
+- Users choose + implement strategies in a single click.
 
-   ```bash
-   npx expo start
-   ```
+### 🔹 Agent Mode
+- Runs in background, constantly *monitoring wallet drift*.  
+- Can auto-trigger rebalancing, lending, or diversification strategies.  
+- Uses testnet tokens (Sepolia ETH, LINK, custom USDC) for safe experimentation.  
+- Extensible to mainnet with real assets + DeFi integrations.  
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠 Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+*Backend*
+- ⚡ [FastAPI](https://fastapi.tiangolo.com/) – high-performance APIs  
+- 🧩 LangChain + Groq – AI reasoning & RAG  
+- 🔗 Web3.py + Etherscan API – wallet & on-chain execution  
 
-## Get a fresh project
+*Frontend*
+- 📱 React Native (Expo) – cross-platform mobile app  
+- 📊 react-native-chart-kit – asset allocation & performance charts  
+- 🔔 Real-time strategy notifications  
 
-When you're ready, run:
+*Blockchain*
+- ⛓ Ethereum Sepolia Testnet  
+- 🪙 Custom ERC-20 Test USDC & faucet LINK  
+- 🔒 MetaMask + Alchemy RPC  
 
-```bash
-npm run reset-project
-```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚀 Getting Started
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 1. Clone Repo
+```sh
+git clone https://github.com/yourusername/wallet.git
+cd wallet
